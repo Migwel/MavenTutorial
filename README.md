@@ -1,1 +1,1 @@
-# MavenTutorial
+This repository will contain small Maven projects which will be used as part of my tutorial on ZesteDeSavoir
