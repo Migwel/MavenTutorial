@@ -25,7 +25,7 @@ public class QuoteFetcherTests {
     private final QuoteFetcher quoteFetcher = new QuoteFetcher(objectMapper, httpClient);
 
     @BeforeEach
-    private void init() {
+    void init() {
         final String quotes = "[{\"text\":\"Alea Jacta Est\", \"author\": \"Julius Caesar\"}]";
         HttpResponse<Object> response = createResponse(quotes);
         when(httpClient.sendAsync(any(), any())).thenReturn(CompletableFuture.supplyAsync(() -> response));
